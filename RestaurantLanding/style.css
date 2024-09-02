@@ -28,12 +28,13 @@ header{
  
 }
 
-.container {
+.containerHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 2px;
-  margin: 0px 5px;
+  margin: 0
+  px 5px;
   border: 2px solid rgb(224, 223, 215);
   border-radius: 18px;
   
@@ -87,7 +88,10 @@ header{
 
 .introCompany{
   /* position: relative; */
-  background-image: url("https://plus.unsplash.com/premium_photo-1670740967011-86730910a2e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmVzdGF1cmFudCUyMGZvb2R8ZW58MHx8MHx8fDA%3D");
+  background-image: url("https://images.unsplash.com/photo-1447078806655-40579c2520d6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvb2R8ZW58MHx8MHx8fDA%3D");
+  width: auto;
+  height: fit-content;
+  background-repeat: inherit;
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
@@ -101,6 +105,28 @@ header{
   margin-top: 8px;
   border: 1px solid white;
   border-radius: 40px;
+}
+.greetingHeader h1{
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  padding: 12px;
+  border: 1px white solid;
+  border-radius: 50px;
+
+}
+.greetingHeader p{
+  box-sizing: border-box;
+  /* background-color: #16120e; */
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 35px;
+  text-align:left;
+  justify-content: left;
+}
+#greetingHeaderContainer{
+  margin-top: 25px;
+
 }
 #introCompany {
   
@@ -121,7 +147,62 @@ header{
  text-align: start;
  align-items: start;
 }
+/*Menu Display Heading CSS  */
+#menuContainer{
+  display: flex;
+  flex-direction: row;
+  
+}
+#menuDisplayHeadings {
+  color: white;
+ 
+  justify-content: center;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  /* border-bottom: 2px solid white; */
+  display: flex; 
+   /*display Inline Block  Ensures border occupies only content width */
+  text-decoration:underline;  
+  margin: 5px auto; /* Centers the element within its parent */
+  
+}
 
+/* experiment container after  */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  border: none;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; 
+}
+
+.text-container {
+  flex: 1;
+}
+
+.text-container h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 1.6;
+}
 
 /*Menu Display CSS */
 .menuDisplay {
@@ -131,13 +212,14 @@ header{
   padding: 20px;
 }
 
+
 .menuDisplayCard {
   border: 1px solid #ccc; 
   padding: 15px; 
   background-color: #fff; 
   width: fit-content; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  border-radius: 8px; 
+  border-radius: 10px; 
 }
 
 .menuDisplayCard img {
@@ -151,6 +233,76 @@ header{
   text-align: center; 
 }
 
+
+.footer {
+  background-color: #ba3f3f;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+  margin-bottom: 20px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-about h2,
+.footer-contact h3,
+.footer-social h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.footer-about p,
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-social li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #ff6347; /* Example hover color */
+}
+
+.footer-bottom {
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #ccc;
+}
 
 /* All howver you will be able to see here */
 
@@ -177,3 +329,5 @@ header{
   margin-left: 6px;
 
 }
+
+
